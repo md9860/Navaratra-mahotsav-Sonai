@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#741b25">
+  <title>शारदीय नवरात्र महोत्सव २०२६ | सेवा नोंदणी</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="registration-card">
+    <header class="form-header">
+      <div class="trident" aria-hidden="true">🚩</div>
+      <p class="trust-name">प. पू. माता प्रेमानंदीनाथ महाराज पब्लिक चॅरिटेबल ट्रस्ट संचालित</p>
+      <h1>श्री क्षेत्र रेणुका दरबार</h1>
+      <p class="temple-name">सद्गुरू शक्तीपीठ कांच मंदिर, सोनई</p>
+      <div class="gold-line"></div>
+      <h2>शारदीय नवरात्र महोत्सव २०२६</h2>
+      <p class="form-subtitle">सेवा नोंदणी अर्ज</p>
+      <p class="blessing">॥ जय जगदंब ॥</p>
+    </header>
+
+    <form id="registrationForm">
+      <section>
+        <h3><span>१</span> यजमानाची माहिती</h3>
+
+        <label for="fullName">यजमानाचे संपूर्ण नाव <b>*</b></label>
+        <input id="fullName" name="fullName" type="text" autocomplete="name"
+               placeholder="आपले संपूर्ण नाव लिहा" required maxlength="120">
+
+        <label for="gotra">गोत्र <b>*</b></label>
+        <input id="gotra" name="gotra" type="text" placeholder="आपले गोत्र लिहा"
+               required maxlength="100">
+
+        <label for="phone">संपर्क क्रमांक <b>*</b></label>
+        <input id="phone" name="phone" type="tel" inputmode="numeric"
+               autocomplete="tel" placeholder="१० अंकी मोबाइल क्रमांक"
+               pattern="[6-9][0-9]{9}" title="१० अंकी योग्य मोबाइल क्रमांक लिहा" required>
+
+        <label for="address">घराचा संपूर्ण पत्ता <b>*</b></label>
+        <textarea id="address" name="address" rows="3"
+                  placeholder="घर क्रमांक, गाव/शहर, तालुका, जिल्हा, पिनकोड"
+                  autocomplete="street-address" required maxlength="500"></textarea>
+      </section>
+
+      <section>
+        <h3><span>२</span> नवरात्र सेवा निवड</h3>
+        <label for="service">आपण कोणती सेवा करू इच्छिता? <b>*</b></label>
+        <select id="service" name="service" required>
+          <option value="durga">दुर्गा सप्तशती पाठ — ९ दिवस</option>
+          <option value="shrisukta">श्री सूक्त पाठ — रोज १६ आवर्तने, ९ दिवस</option>
+          <option value="kumkum9">कुंकूमार्चन सेवा — ९ दिवस</option>
+          <option value="kumkum1">कुंकूमार्चन सेवा — १ दिवस</option>
+          <option value="path1">सप्तशती / श्री सूक्त पाठ — १ दिवस</option>
+        </select>
+
+        <div class="dakshina-panel" aria-live="polite">
+          <span>निवडलेल्या सेवेची दक्षिणा</span>
+          <strong id="dakshina">₹ ३,१००</strong>
+          <small>दक्षिणेची अंतिम खात्री दरबाराशी संपर्क करून घ्यावी.</small>
+        </div>
+
+        <fieldset>
+          <legend>पूजन पद्धत <b>*</b></legend>
+          <label class="radio-row">
+            <input type="radio" name="participation" value="संकल्पाद्वारे सेवा" checked>
+            <span>संकल्पाद्वारे सेवा</span>
+          </label>
+          <label class="radio-row">
+            <input type="radio" name="participation" value="प्रत्यक्ष मंदिरात पूजन">
+            <span>प्रत्यक्ष मंदिरात येऊन पूजन</span>
+          </label>
+          <p class="note" id="visitNote" hidden>
+            प्रत्यक्ष पूजनासाठी तारीख व वेळ आधी निश्चित करणे आवश्यक आहे.
+            कृपया ९३७०१८९६४९ या क्रमांकावर संपर्क साधा.
+          </p>
+        </fieldset>
+
+        <label for="notes">अतिरिक्त माहिती (ऐच्छिक)</label>
+        <textarea id="notes" name="notes" rows="2"
+                  placeholder="इच्छित तारीख किंवा इतर माहिती" maxlength="500"></textarea>
+      </section>
+
+      <div class="privacy-note">
+        कृपया मोबाइल क्रमांक व पत्ता अचूक लिहा, जेणेकरून उपासनेचा प्रसाद आपल्यापर्यंत पाठवता येईल.
+      </div>
+
+      <button class="submit-button" type="submit">🚩 WhatsApp वर नोंदणी पाठवा</button>
+      <p class="send-note">
+        बटण दाबल्यानंतर WhatsApp उघडेल. नोंदणी पाठवण्यासाठी संदेशात <strong>Send</strong> दाबा.
+      </p>
+    </form>
+
+    <footer>
+      <p>नोंदणी व अधिक माहितीसाठी संपर्क</p>
+      <a href="tel:9370189649">९३७०१८९६४९</a>
+      <p class="footer-blessing">॥ श्री रेणुका माता प्रसन्न ॥</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

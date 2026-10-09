@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --maroon: #741b25;
+  --maroon-dark: #50121a;
+  --cream: #fffaf0;
+  --gold: #d6b15e;
+  --text: #332523;
+  --muted: #766865;
+  --border: #eadfce;
+}
+body {
+  margin: 0;
+  padding: 24px 14px;
+  background: #f5eee3;
+  color: var(--text);
+  font-family: "Noto Sans Devanagari", "Mangal", system-ui, sans-serif;
+  line-height: 1.65;
+}
+.registration-card {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 12px 36px rgba(70, 35, 25, .10);
+}
+.form-header {
+  padding: 28px 22px 24px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(145deg, var(--maroon), var(--maroon-dark));
+  border-bottom: 4px solid var(--gold);
+}
+.trident {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.trust-name {
+  margin: 0 0 8px;
+  color: #f5e7c8;
+  font-size: 13px;
+}
+h1 {
+  margin: 0;
+  color: #ffe9a8;
+  font-size: clamp(25px, 5vw, 35px);
+  line-height: 1.35;
+}
+.temple-name {
+  margin: 8px 0 0;
+  font-size: 16px;
+}
+.gold-line {
+  width: 100px;
+  height: 2px;
+  margin: 18px auto;
+  background: var(--gold);
+}
+.form-header h2 {
+  margin: 0;
+  color: #ffe9a8;
+  font-size: clamp(19px, 4vw, 25px);
+}
+.form-subtitle {
+  margin: 5px 0;
+}
+.blessing {
+  margin: 12px 0 0;
+  color: #ffe9a8;
+  font-weight: 700;
+}
+form {
+  padding: 22px;
+}
+section {
+  margin: 0 0 28px;
+}
+h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  color: var(--maroon);
+  font-size: 20px;
+}
+h3 span {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--maroon);
+  font-size: 16px;
+}
+label, legend {
+  display: block;
+  margin: 14px 0 7px;
+  font-weight: 650;
+  font-size: 15px;
+}
+label b, legend b {
+  color: #b42332;
+}
+input:not([type="radio"]), textarea, select {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 11px 12px;
+  color: var(--text);
+  background: #fffdf9;
+  border: 1px solid #d9cdbd;
+  border-radius: 9px;
+  font: inherit;
+  font-size: 16px;
+}
+textarea {
+  resize: vertical;
+}
+input:focus, textarea:focus, select:focus {
+  outline: 3px solid rgba(116, 27, 37, .14);
+  border-color: var(--maroon);
+}
+.dakshina-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: 17px 0;
+  padding: 15px;
+  border: 1px solid #ead6a5;
+  border-radius: 12px;
+  background: #fff8e6;
+}
+.dakshina-panel span, .dakshina-panel small {
+  color: var(--muted);
+}
+.dakshina-panel strong {
+  color: var(--maroon);
+  font-size: 27px;
+}
+.dakshina-panel small {
+  font-size: 12px;
+}
+fieldset {
+  padding: 8px 13px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+fieldset legend {
+  padding: 0 5px;
+}
+.radio-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 9px 0;
+  font-weight: 400;
+}
+.radio-row input {
+  width: 18px;
+  height: 18px;
+  margin-top: 5px;
+  accent-color: var(--maroon);
+  flex: 0 0 auto;
+}
+.note, .privacy-note, .send-note {
+  color: var(--muted);
+  font-size: 13px;
+}
+.note {
+  margin-bottom: 0;
+}
+.privacy-note {
+  padding: 12px;
+  background: #f8f3eb;
+  border-radius: 9px;
+}
+.submit-button {
+  width: 100%;
+  min-height: 54px;
+  margin-top: 17px;
+  padding: 13px 16px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  background: #167448;
+  font: inherit;
+  font-size: 17px;
+  font-weight: 750;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background: #105d39;
+}
+.submit-button:focus-visible {
+  outline: 3px solid #d6b15e;
+  outline-offset: 3px;
+}
+.send-note {
+  text-align: center;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #fff8e9;
+  border-top: 1px solid var(--border);
+}
+footer p {
+  margin: 4px 0;
+}
+footer a {
+  color: var(--maroon);
+  font-size: 23px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.footer-blessing {
+  margin-top: 12px;
+  color: var(--maroon);
+}
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+    background: var(--cream);
+  }
+  .registration-card {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .form-header {
+    padding: 23px 16px 20px;
+  }
+  .trust-name {
+    font-size: 12px;
+  }
+  .temple-name {
+    font-size: 14px;
+  }
+  form {
+    padding: 20px 16px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+}
